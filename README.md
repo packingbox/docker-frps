@@ -10,3 +10,6 @@ docker run /
     -p 7000:7000 /
     -p 7500:7500 /
     packingbox/docker-frps
+    
+# Detail usage
+https://github.com/fatedier/frp
