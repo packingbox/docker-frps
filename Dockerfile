@@ -1,16 +1,16 @@
 FROM alpine 3.7
-MAINTAINER Macro,<admin@myds.cloud>
+MAINTAINER Packingbox <admin@myds.cloud>
 
-WORKDIR /var/frp
+WORKDIR /frp
 
-ADD https://github.com/fatedier/frp/releases/download/v0.17.0/frp_0.17.0_linux_amd64.tar.gz /var/frp/frp_0.17.0_linux_amd64.tar.gz
+ADD https://github.com/fatedier/frp/releases/download/v0.17.0/frp_0.17.0_linux_amd64.tar.gz /frp/frp_0.17.0_linux_amd64.tar.gz
 
 RUN tar -zxf frp_0.17.0_linux_amd64.tar.gz  \
     && mv frp_0.17.0_linux_amd64/* . \
     && rm -rf frpc* \
     && rm -rf frp_0.17.0_linux_amd64*
 
-COPY conf/frps.ini /var/frp/conf/frps.ini
+COPY conf/frps.ini /frp/conf/frps.ini
 
 VOLUME /var/frp/conf
 
