@@ -1,11 +1,11 @@
 # frps-docker
-frps 0.20 version docker
+frps 0.17 version docker
 
 # How to run this docker
 ```
 docker run \
-	-d \
-	--name frps-0.20 \
+	-d --privileged \
+	--name frps-0.17 \
 	-v /your_data_folder/frps.ini:/frp/conf/frps.ini \
 	-p 7000:7000 \
 	-p 7500:7500 \
