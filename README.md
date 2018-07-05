@@ -6,7 +6,7 @@ frps 0.17 version docker
 docker run \
 	-d --privileged \
 	--name frps-0.17 \
-	-v /your_data_folder/frps.ini:/frp/etc/frps.ini \
+	-v /your_data_folder/frps.ini:/frp/conf/frps.ini \
 	-p 7000:7000 \
 	-p 7500:7500 \
 	packingbox/docker-frps
