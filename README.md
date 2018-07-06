@@ -9,7 +9,7 @@ docker run \
 	-v /your_data_folder/frps.ini:/frp/conf/frps.ini \
 	-p 7000:7000 \
 	-p 7500:7500 \
-	packingbox/docker-frps
+	packingbox/docker-frps:0.20
 ```    
 # Detail usage
 https://github.com/fatedier/frp
