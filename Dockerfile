@@ -12,7 +12,7 @@ RUN tar -zxf frp_0.20.0_linux_amd64.tar.gz  \
 
 COPY conf/frps.ini /frp/conf/frps.ini
 
-VOLUME /var/frp/conf
+VOLUME /frp/conf
 
 EXPOSE 80 443 7000 7500
 
